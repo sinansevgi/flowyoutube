@@ -2,8 +2,9 @@ body {
   color: #000;
   background-color: white;
 }
+
 main {
-  margin:80px 10px 0px 10px;
+  margin: 80px 10px 0px 10px;
   text-align: center;
   display: grid;
   height: 100vh;
@@ -50,7 +51,9 @@ nav {
   border-radius: 50%;
   height: 50px;
   width: 50px;
-}.nav-link {
+}
+
+.nav-link {
   color: #d5d7d8;
   margin: 5px;
 }
@@ -66,14 +69,21 @@ nav {
 
 .searchBar {
   text-align: center;
+  display: flex;
   width: 100%;
 }
+
 #search-area {
+  margin-left: auto;
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
+  flex-grow: 1;
+  max-width: 30vw;
 }
+
 #search-button {
+  margin-right: auto;
   background-color: #f8f8f8;
   padding: 10px;
   color: #000;
@@ -82,15 +92,18 @@ nav {
   border-left: none;
   cursor: pointer;
 }
+
 .rightMenu {
   margin: 5px;
   height: 30px;
   width: 30px;
 }
+
 /* video */
 #video-section {
   float: left;
 }
+
 video-section {
   grid-area: v;
 }
@@ -98,28 +111,15 @@ video-section {
 #main-video {
   width: 60vw;
 }
+
 #glass {
-  height:10px;
+  height: 10px;
   width: auto;
 }
+
 /* recommendation */
 /* submenu */
 /* VIDEO SECTION */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .recommendations {
   grid-area: r;
 }
