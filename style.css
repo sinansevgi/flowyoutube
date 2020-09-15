@@ -1,6 +1,7 @@
 body {
   color: #000;
   background-color: white;
+  font-family: 'Roboto';
 }
 
 main {
@@ -183,4 +184,27 @@ a>u {
   text-align: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+.channelName
+{
+  display: flex;
+  justify-content: space-between;
+}
+.videoInformation
+{
+  display: inline;
+  text-align: left;
+}
+.subscribeButton
+{
+  background-color: #cc0000;
+  border: #cc0000;
+  border-radius: 2px;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 700;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
