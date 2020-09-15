@@ -1,0 +1,113 @@
+body {
+  color: #fff;
+  background-color: #181818;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  background-color: #202020;
+  align-items: center;
+  top: 0;
+  left: 0;
+  min-height: 60px;
+}
+
+#header-img {
+  height: 50px;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+}
+
+/* VIDEO SECTION */
+.nav-link {
+  color: #d5d7d8;
+  margin: 5px;
+}
+
+#menuImage {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+
+ .searchBar {
+   text-align: center;
+   width: 100%;
+}
+#search-area {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+}
+
+#search-button {
+  background-color: #323232;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+#Glass {
+  height: 15px;
+  width: 15px;
+}
+
+#rightMenu {
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+#video {
+  float: left;
+}
+
+#main-video {
+  width: 60vw;
+}
+
+main {
+  text-align: center;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 300px 1fr 20px 1fr 1fr;
+  grid-gap: 3px;
+  grid-template-areas:
+    "v v v v v v v v r r r r"
+    "v v v v v v v v r r r r"
+    "vt vt vt vt vt sb sb sb r r r r"
+    "c c c c c c c c r r r r";
+}
+
+.video {
+  grid-area: v;
+}
+
+.recommendations {
+  grid-area: r;
+}
+
+.submenu {
+  grid-area: sb;
+}
+
+.vtitle {
+  grid-area: vt;
+}
+
+.comments {
+  grid-area: c;
+}
