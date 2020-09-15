@@ -6,15 +6,7 @@ body {
 main {
   margin: 80px 10px 0px 10px;
   text-align: center;
-  display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 1fr 100px 2fr;
-  grid-gap: 10px;
-  grid-template-areas:
-    "v v v v v v r r r r"
-    "vt vt . . . . r r r r"
-    "c c c c c c r r r r";
+  display: flex;
 }
 
 /* header */
@@ -100,12 +92,11 @@ nav {
 }
 
 /* video */
-#video-section {
+.video-section {
   float: left;
-}
-
-video-section {
-  grid-area: v;
+  width: 60vw;
+  padding-left: 2vw;
+  padding-top: 1vh;
 }
 
 #main-video {
@@ -140,11 +131,15 @@ video-section {
   margin-left: 5px;
 }
 
+.sub-container{
+  display: flex;
+  justify-content: space-between;
+}
 .vtitle {
   grid-area: vt;
   text-align: left;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  justify-content: left;
 }
 
 .comments {
