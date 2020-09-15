@@ -2,18 +2,13 @@ body {
   color: #000;
   background-color: white;
 }
+
 main {
-  margin:80px 10px 0px 10px;
+  margin: 80px 10px 0 10px;
   text-align: center;
-  display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 1fr 100px 2fr;
-  grid-gap: 10px;
-  grid-template-areas:
-    "v v v v v v r r r r"
-    "vt vt . . . . r r r r"
-    "c c c c c c r r r r";
+  display: flex;
+  background-color: #f9f9f9;
+  height: 100vw;
 }
 
 /* header */
@@ -26,6 +21,7 @@ header {
   left: 0;
   min-height: 60px;
   display: flex;
+  z-index: 999;
 }
 
 #header-img {
@@ -50,7 +46,9 @@ nav {
   border-radius: 50%;
   height: 50px;
   width: 50px;
-}.nav-link {
+}
+
+.nav-link {
   color: #d5d7d8;
   margin: 5px;
 }
@@ -66,14 +64,21 @@ nav {
 
 .searchBar {
   text-align: center;
+  display: flex;
   width: 100%;
 }
+
 #search-area {
+  margin-left: auto;
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
+  flex-grow: 1;
+  max-width: 30vw;
 }
+
 #search-button {
+  margin-right: auto;
   background-color: #f8f8f8;
   padding: 10px;
   color: #000;
@@ -82,46 +87,46 @@ nav {
   border-left: none;
   cursor: pointer;
 }
+
 .rightMenu {
   margin: 5px;
   height: 30px;
   width: 30px;
 }
+
 /* video */
-#video-section {
+.video-section {
   float: left;
-}
-video-section {
-  grid-area: v;
+  flex-grow:4;
+  /* padding-left: 2vw;
+  padding-top: 1vh; */
 }
 
 #main-video {
-  width: 60vw;
+ width: 100%;
 }
+
 #glass {
-  height:10px;
+  height: 10px;
   width: auto;
 }
+
 /* recommendation */
 /* submenu */
 /* VIDEO SECTION */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .recommendations {
-  grid-area: r;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.thumnbailRecomendation {
+  display: flex;
+  margin-bottom: 10px;
+
 }
 
 .submenu {
@@ -140,11 +145,16 @@ video-section {
   margin-left: 5px;
 }
 
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .vtitle {
   grid-area: vt;
   text-align: left;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  justify-content: left;
 }
 
 .comments {
@@ -155,3 +165,22 @@ video-section {
 a>u {
   text-decoration: none;
 }
+
+.thumbnailImage {
+  width: 190px;
+  height: 110px;
+}
+
+.aboutVideo {
+  font-size: 14px;
+  padding-left: 10px;
+
+}
+.views
+{
+  padding-left: 10px;
+  font-size: 10px;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
