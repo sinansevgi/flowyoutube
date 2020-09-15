@@ -12,6 +12,10 @@ main {
   height: 100vw;
 }
 
+.line-break {
+  border: 1px solid #e0e0e0;
+}
+
 /* header */
 header {
   position: fixed;
@@ -43,7 +47,7 @@ nav {
   justify-content: right;
 }
 
-#avatar {
+.avatar {
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -98,13 +102,13 @@ nav {
 /* video */
 .video-section {
   float: left;
-  flex-grow:4;
+  flex-grow: 4;
   /* padding-left: 2vw;
   padding-top: 1vh; */
 }
 
 #main-video {
- width: 100%;
+  width: 100%;
 }
 
 #glass {
@@ -119,7 +123,6 @@ nav {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-
   flex-grow: 1;
   padding: 10px;
 }
@@ -127,11 +130,9 @@ nav {
 .thumnbailRecomendation {
   display: flex;
   margin-bottom: 10px;
-
 }
 
 .submenu {
-  grid-area: sb;
   margin-right: 60px;
   text-align: left;
   font-size: 15px;
@@ -152,15 +153,9 @@ nav {
 }
 
 .vtitle {
-  grid-area: vt;
   text-align: left;
   display: block;
   justify-content: left;
-}
-
-.comments {
-  margin-top: 20px;
-  grid-area: c;
 }
 
 a>u {
@@ -175,27 +170,26 @@ a>u {
 .aboutVideo {
   font-size: 14px;
   padding-left: 10px;
-
 }
-.views
-{
+
+.views {
   padding-left: 10px;
   font-size: 10px;
   text-align: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.channelName
-{
+
+.channelName {
   display: flex;
   justify-content: space-between;
 }
-.videoInformation
-{
+
+.videoInformation {
   display: inline;
   text-align: left;
 }
-.subscribeButton
-{
+
+.subscribeButton {
   background-color: #cc0000;
   border: #cc0000;
   border-radius: 2px;
@@ -207,4 +201,26 @@ a>u {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.submit-comment {
+  display: flex;
+  text-align: left;
+}
+
+.avatar-container {
+  flex-grow: 1;
+}
+
+.comment-form-container {
+  flex-grow: 50;
+}
+
+.comment-form {
+  margin-top: 10px;
+  width: 100%;
+  color: #646464;
+  background-color: #f9f9f9;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #e0e0e0;
 }
