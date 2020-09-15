@@ -1,6 +1,6 @@
 body {
-  color: #fff;
-  background-color: #181818;
+  color: #000;
+  background-color:white;
 }
 
 #header {
@@ -11,21 +11,30 @@ body {
   top: 0;
   left: 0;
   min-height: 60px;
+  display: flex;
 }
 
 #header-img {
-  height: 50px;
+  height: 25px;
   float: left;
-  margin-top: 20px;
+  margin-top: 13px;
   margin-bottom: 20px;
   margin-left: 10px;
 }
-
+#nav-bar
+{
+ float: right;
+}
 nav {
   display: flex;
   justify-content: right;
 }
+#avatar{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 
+}
 /* VIDEO SECTION */
 .nav-link {
   color: #d5d7d8;
@@ -33,9 +42,11 @@ nav {
 }
 
 #menuImage {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 25px;
   float: left;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 
@@ -64,7 +75,7 @@ nav {
   width: 15px;
 }
 
-#rightMenu {
+.rightMenu {
   margin: 5px;
   height: 30px;
   width: 30px;
@@ -106,12 +117,23 @@ main {
   text-align: right;
   font-size: 15px;
   color: grey;
+  display: flex;
+  
+}
+.subMenuImage
+{
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+
 }
 
 .vtitle {
   grid-area: vt;
   text-align: left;
-
+  
 }
 
 .comments {
