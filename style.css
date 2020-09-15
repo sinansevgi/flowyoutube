@@ -4,9 +4,11 @@ body {
 }
 
 main {
-  margin: 80px 10px 0px 10px;
+  margin: 80px 10px 0 10px;
   text-align: center;
   display: flex;
+  background-color: #f9f9f9;
+  height: 100vw;
 }
 
 /* header */
@@ -95,13 +97,13 @@ nav {
 /* video */
 .video-section {
   float: left;
-  width: 60vw;
-  padding-left: 2vw;
-  padding-top: 1vh;
+  flex-grow:4;
+  /* padding-left: 2vw;
+  padding-top: 1vh; */
 }
 
 #main-video {
-  width: 60vw;
+ width: 100%;
 }
 
 #glass {
@@ -115,16 +117,18 @@ nav {
 .recommendations {
   display: flex;
   flex-flow: column;
-  width: 10px;
-  height: 10px;
-  flex-grow: 0;
+  justify-content: flex-start;
+
+  flex-grow: 1;
   padding: 10px;
 }
-.thumnbailRecomendation
-{
+
+.thumnbailRecomendation {
   display: flex;
-  flex-grow: 1;
+  margin-bottom: 10px;
+
 }
+
 .submenu {
   grid-area: sb;
   margin-right: 60px;
@@ -141,10 +145,11 @@ nav {
   margin-left: 5px;
 }
 
-.sub-container{
+.sub-container {
   display: flex;
   justify-content: space-between;
 }
+
 .vtitle {
   grid-area: vt;
   text-align: left;
@@ -160,13 +165,12 @@ nav {
 a>u {
   text-decoration: none;
 }
-.thumbnailImage
-{
+
+.thumbnailImage {
   width: 190px;
   height: 110px;
 }
-.aboutVideo
-{
+
+.aboutVideo {
   font-size: 14px;
-  
 }
