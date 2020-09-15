@@ -21,11 +21,11 @@ Additional description about the project and its features.
 
 👤 **Nikola Zdrale**
 
-- GitHub: [@githubhandle](https://github.com/zdrale)
+- GitHub: [@zdrale](https://github.com/zdrale)
 
 👤 **Sinan Sevgi**
 
-- GitHub: [@githubhandle](https://github.com/sinansevgi)
+- GitHub: [@sinansevgi](https://github.com/sinansevgi)
 
 ## 🤝 Contributing
 
