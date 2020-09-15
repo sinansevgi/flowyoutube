@@ -1,8 +1,15 @@
+
+
+
+/* Recommendation Section */
+
+/* Global Section */
 body {
   color: #000;
   background-color: white;
   font-family: 'Roboto';
 }
+
 
 main {
   margin: 80px 10px 0 10px;
@@ -11,12 +18,20 @@ main {
   background-color: #f9f9f9;
   height: 100vw;
 }
-
+.avatar 
+{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
 .line-break {
   border: 1px solid #e0e0e0;
 }
 
-/* header */
+
+
+/* Header Section */
+
 header {
   position: fixed;
   width: 100%;
@@ -28,36 +43,6 @@ header {
   display: flex;
   z-index: 999;
 }
-
-#header-img {
-  height: 25px;
-  float: left;
-  margin-top: 13px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-}
-
-/* navbar */
-#nav-bar {
-  float: right;
-}
-
-nav {
-  display: flex;
-  justify-content: right;
-}
-
-.avatar {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
-.nav-link {
-  color: #d5d7d8;
-  margin: 5px;
-}
-
 #menuImage {
   height: 30px;
   width: 25px;
@@ -66,7 +51,14 @@ nav {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
+#header-img {
+  height: 25px;
+  float: left;
+  margin-top: 13px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+/** Search Section **/
 .searchBar {
   text-align: center;
   display: flex;
@@ -81,7 +73,6 @@ nav {
   flex-grow: 1;
   max-width: 30vw;
 }
-
 #search-button {
   margin-right: auto;
   background-color: #f8f8f8;
@@ -92,44 +83,35 @@ nav {
   border-left: none;
   cursor: pointer;
 }
-
-.rightMenu {
-  margin: 5px;
-  height: 30px;
-  width: 30px;
+/** Navigation Section **/
+nav {
+  display: flex;
+  justify-content: right;
 }
-
-/* video */
+#nav-bar {
+  float: right;
+}
+.nav-link {
+  color: #d5d7d8;
+  margin: 5px;
+}
+/* Video section */
 .video-section {
   float: left;
   flex-grow: 4;
-  /* padding-left: 2vw;
-  padding-top: 1vh; */
+ 
 }
-
 #main-video {
   width: 100%;
 }
-
-#glass {
-  height: 10px;
-  width: auto;
+.vtitle {
+  text-align: left;
+  display: block;
+  justify-content: left;
 }
-
-/* recommendation */
-/* submenu */
-/* VIDEO SECTION */
-.recommendations {
+.sub-container {
   display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  flex-grow: 1;
-  padding: 10px;
-}
-
-.thumnbailRecomendation {
-  display: flex;
-  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .submenu {
@@ -146,17 +128,64 @@ nav {
   margin-right: 5px;
   margin-left: 5px;
 }
-
-.sub-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.vtitle {
+/* Comment Section */
+.commentSection
+{
   text-align: left;
-  display: block;
-  justify-content: left;
 }
+.rightMenu {
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+}
+.submit-comment {
+  display: flex;
+  text-align: left;
+ 
+}
+
+.avatar-container {
+  flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#glass {
+  height: 10px;
+  width: auto;
+}
+
+
+.recommendations {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.thumnbailRecomendation {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+
+
+
 
 a>u {
   text-decoration: none;
@@ -203,15 +232,7 @@ a>u {
   padding-right: 10px;
 }
 
-.submit-comment {
-  display: flex;
-  text-align: left;
- 
-}
 
-.avatar-container {
-  flex-grow: 1;
-}
 
 .comment-form-container {
   flex-grow: 50;
@@ -240,8 +261,4 @@ a>u {
 {
   height: 1em;
   width: 1em;
-}
-.commentSection
-{
-  text-align: left;
 }
