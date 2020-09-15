@@ -206,6 +206,7 @@ a>u {
 .submit-comment {
   display: flex;
   text-align: left;
+ 
 }
 
 .avatar-container {
@@ -215,7 +216,11 @@ a>u {
 .comment-form-container {
   flex-grow: 50;
 }
-
+.comment
+{
+  display: flex;
+  margin-top: 30px;
+}
 .comment-form {
   margin-top: 10px;
   width: 100%;
@@ -223,4 +228,20 @@ a>u {
   background-color: #f9f9f9;
   border: 1px solid transparent;
   border-bottom: 1px solid #e0e0e0;
+}
+.commentBody
+{
+ flex-grow: 50;
+ 
+ display: flex;
+ flex-flow: column;
+}
+.commentIcons
+{
+  height: 1em;
+  width: 1em;
+}
+.commentSection
+{
+  text-align: left;
 }
