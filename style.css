@@ -84,9 +84,9 @@ main {
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 300px 1fr 20px 1fr 1fr;
-  grid-gap: 3px;
+  grid-gap: 55px;
   grid-template-areas:
-    "v v v v v v v v r r r r"
+    
     "v v v v v v v v r r r r"
     "vt vt vt vt vt sb sb sb r r r r"
     "c c c c c c c c r r r r";
@@ -102,12 +102,22 @@ main {
 
 .submenu {
   grid-area: sb;
+  margin-top: 60px;
+  text-align: right;
+  font-size: 15px;
+  color: grey;
 }
 
 .vtitle {
   grid-area: vt;
+  text-align: left;
+
 }
 
 .comments {
+  margin-top: 20px;
   grid-area: c;
+}
+a, u {
+  text-decoration: none;
 }
