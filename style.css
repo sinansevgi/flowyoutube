@@ -1,15 +1,9 @@
-
-
-
-/* Recommendation Section */
-
 /* Global Section */
 body {
   color: #000;
   background-color: white;
-  font-family: 'Roboto';
+  font-family: 'Roboto', cursive;
 }
-
 
 main {
   margin: 80px 10px 0 10px;
@@ -18,20 +12,18 @@ main {
   background-color: #f9f9f9;
   height: 100vw;
 }
-.avatar 
-{
+
+.avatar {
   border-radius: 50%;
   height: 50px;
   width: 50px;
 }
+
 .line-break {
   border: 1px solid #e0e0e0;
 }
 
-
-
 /* Header Section */
-
 header {
   position: fixed;
   width: 100%;
@@ -43,6 +35,7 @@ header {
   display: flex;
   z-index: 999;
 }
+
 #menuImage {
   height: 30px;
   width: 25px;
@@ -51,6 +44,7 @@ header {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 #header-img {
   height: 25px;
   float: left;
@@ -58,6 +52,7 @@ header {
   margin-bottom: 20px;
   margin-left: 10px;
 }
+
 /** Search Section **/
 .searchBar {
   text-align: center;
@@ -73,6 +68,7 @@ header {
   flex-grow: 1;
   max-width: 30vw;
 }
+
 #search-button {
   margin-right: auto;
   background-color: #f8f8f8;
@@ -83,32 +79,43 @@ header {
   border-left: none;
   cursor: pointer;
 }
+
+#glass {
+  height: 10px;
+  width: auto;
+}
+
 /** Navigation Section **/
 nav {
   display: flex;
   justify-content: right;
 }
+
 #nav-bar {
   float: right;
 }
+
 .nav-link {
   color: #d5d7d8;
   margin: 5px;
 }
+
 /* Video section */
 .video-section {
   float: left;
   flex-grow: 4;
- 
 }
+
 #main-video {
   width: 100%;
 }
+
 .vtitle {
   text-align: left;
   display: block;
   justify-content: left;
 }
+
 .sub-container {
   display: flex;
   justify-content: space-between;
@@ -128,47 +135,81 @@ nav {
   margin-right: 5px;
   margin-left: 5px;
 }
-/* Comment Section */
-.commentSection
-{
+
+.channelName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.videoInformation {
+  display: inline;
   text-align: left;
 }
+
+.subscribeButton {
+  background-color: #c00;
+  border: #c00;
+  border-radius: 2px;
+  color: white;
+  font-family: 'Roboto', cursive;
+  font-weight: 700;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Comment Section */
+.commentSection {
+  text-align: left;
+}
+
 .rightMenu {
   margin: 5px;
   height: 30px;
   width: 30px;
 }
+
 .submit-comment {
   display: flex;
   text-align: left;
- 
 }
 
 .avatar-container {
   flex-grow: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#glass {
-  height: 10px;
-  width: auto;
+.comment-form-container {
+  flex-grow: 50;
 }
 
+.comment {
+  display: flex;
+  margin-top: 30px;
+}
+
+.comment-form {
+  margin-top: 10px;
+  width: 100%;
+  color: #646464;
+  background-color: #f9f9f9;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.commentBody {
+  flex-grow: 50;
+  display: flex;
+  flex-flow: column;
+}
+
+.commentIcons {
+  height: 1em;
+  width: 1em;
+}
+
+/* Recommendation Section */
 
 .recommendations {
   display: flex;
@@ -183,12 +224,11 @@ nav {
   margin-bottom: 10px;
 }
 
-
-
-
-
-a>u {
-  text-decoration: none;
+.views {
+  padding-left: 10px;
+  font-size: 10px;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .thumbnailImage {
@@ -199,66 +239,4 @@ a>u {
 .aboutVideo {
   font-size: 14px;
   padding-left: 10px;
-}
-
-.views {
-  padding-left: 10px;
-  font-size: 10px;
-  text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.channelName {
-  display: flex;
-  justify-content: space-between;
-}
-
-.videoInformation {
-  display: inline;
-  text-align: left;
-}
-
-.subscribeButton {
-  background-color: #cc0000;
-  border: #cc0000;
-  border-radius: 2px;
-  color: white;
-  font-family: 'Roboto';
-  font-weight: 700;
-  height: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-
-.comment-form-container {
-  flex-grow: 50;
-}
-.comment
-{
-  display: flex;
-  margin-top: 30px;
-}
-.comment-form {
-  margin-top: 10px;
-  width: 100%;
-  color: #646464;
-  background-color: #f9f9f9;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #e0e0e0;
-}
-.commentBody
-{
- flex-grow: 50;
- 
- display: flex;
- flex-flow: column;
-}
-.commentIcons
-{
-  height: 1em;
-  width: 1em;
 }
