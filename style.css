@@ -1,4 +1,4 @@
-/* Global Section */
+
 body {
   color: #000;
   background-color: white;
@@ -23,7 +23,6 @@ main {
   border: 1px solid #e0e0e0;
 }
 
-/* Header Section */
 header {
   position: fixed;
   width: 100%;
@@ -53,7 +52,6 @@ header {
   margin-left: 10px;
 }
 
-/** Search Section **/
 .search-bar {
   text-align: center;
   display: flex;
@@ -62,7 +60,7 @@ header {
 
 #search-area {
   margin-left: auto;
-  padding: 10px;
+  padding: 3px;
   font-size: 17px;
   border: 1px solid grey;
   flex-grow: 1;
@@ -72,7 +70,7 @@ header {
 #search-button {
   margin-right: auto;
   background-color: #f8f8f8;
-  padding: 10px;
+  padding: 3px 30px 3px 30px;
   color: #000;
   font-size: 17px;
   border: 1px solid grey;
@@ -81,11 +79,10 @@ header {
 }
 
 #glass {
-  height: 10px;
+  height: 20px;
   width: auto;
 }
 
-/** Navigation Section **/
 nav {
   display: flex;
   justify-content: right;
@@ -100,7 +97,6 @@ nav {
   margin: 5px;
 }
 
-/* Video section */
 .video-section {
   float: left;
   flex-grow: 4;
@@ -127,6 +123,7 @@ nav {
   font-size: 15px;
   color: grey;
   display: flex;
+  align-items: center;
 }
 
 .sub-menu-image {
@@ -157,9 +154,9 @@ nav {
   padding: 10px;
 }
 
-/* Comment Section */
 .comment-section {
   text-align: left;
+  margin-left: 0px;
 }
 
 .right-menu {
@@ -199,6 +196,7 @@ nav {
   flex-grow: 50;
   display: flex;
   flex-flow: column;
+  text-align: left;
 }
 
 .comment-icons {
@@ -206,14 +204,12 @@ nav {
   width: 1em;
 }
 
-/* Recommendation Section */
-
 .recommendations {
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
+  text-align: left;
   flex-grow: 1;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 .thumbnail-recommendation {
