@@ -160,7 +160,7 @@ nav {
 
 .comment-section {
   text-align: left;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .right-menu {
@@ -241,5 +241,5 @@ nav {
 .about-video {
   font-size: 14px;
   padding-left: 10px;
-  margin-top: 0px;
+  margin-top: 0;
 }
