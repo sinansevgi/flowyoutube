@@ -36,7 +36,7 @@ header {
   z-index: 999;
 }
 
-#menuImage {
+#menu-image {
   height: 30px;
   width: 25px;
   float: left;
@@ -54,7 +54,7 @@ header {
 }
 
 /** Search Section **/
-.searchBar {
+.search-bar {
   text-align: center;
   display: flex;
   width: 100%;
@@ -129,24 +129,24 @@ nav {
   display: flex;
 }
 
-.subMenuImage {
+.sub-menu-image {
   height: 20px;
   width: 20px;
   margin-right: 5px;
   margin-left: 5px;
 }
 
-.channelName {
+.channel-name {
   display: flex;
   justify-content: space-between;
 }
 
-.videoInformation {
+.video-information {
   display: inline;
   text-align: left;
 }
 
-.subscribeButton {
+.subscribe-button {
   background-color: #c00;
   border: #c00;
   border-radius: 2px;
@@ -154,18 +154,15 @@ nav {
   font-family: 'Roboto', cursive;
   font-weight: 700;
   height: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 /* Comment Section */
-.commentSection {
+.comment-section {
   text-align: left;
 }
 
-.rightMenu {
+.right-menu {
   margin: 5px;
   height: 30px;
   width: 30px;
@@ -198,13 +195,13 @@ nav {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.commentBody {
+.comment-body {
   flex-grow: 50;
   display: flex;
   flex-flow: column;
 }
 
-.commentIcons {
+.comment-icons {
   height: 1em;
   width: 1em;
 }
@@ -219,7 +216,7 @@ nav {
   padding: 10px;
 }
 
-.thumnbailRecomendation {
+.thumbnail-recommendation {
   display: flex;
   margin-bottom: 10px;
 }
@@ -231,12 +228,12 @@ nav {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.thumbnailImage {
+.thumbnail-image {
   width: 190px;
   height: 110px;
 }
 
-.aboutVideo {
+.about-video {
   font-size: 14px;
   padding-left: 10px;
 }
