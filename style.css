@@ -1,3 +1,4 @@
+
 body {
   color: #000;
   background-color: white;
@@ -10,16 +11,18 @@ main {
   display: flex;
   background-color: #f9f9f9;
   height: 100vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
+}
 
+.avatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
 .line-break {
   border: 1px solid #e0e0e0;
 }
 
-/* header */
 header {
   position: fixed;
   width: 100%;
@@ -32,38 +35,7 @@ header {
   z-index: 999;
 }
 
-#header-img {
-  height: 25px;
-  float: left;
-  margin-top: 13px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-}
-
-/* navbar */
-#nav-bar {
-  float: right;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.avatar {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
-.nav-link {
-  color: #d5d7d8;
-  margin: 5px;
-}
-
-#menuImage {
+#menu-image {
   height: 30px;
   width: 25px;
   float: left;
@@ -72,7 +44,15 @@ nav {
   margin-bottom: 20px;
 }
 
-.searchBar {
+#header-img {
+  height: 25px;
+  float: left;
+  margin-top: 13px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.search-bar {
   text-align: center;
   display: flex;
   width: 100%;
@@ -80,7 +60,7 @@ nav {
 
 #search-area {
   margin-left: auto;
-  padding: 10px;
+  padding: 3px;
   font-size: 17px;
   border: 1px solid grey;
   flex-grow: 1;
@@ -90,7 +70,7 @@ nav {
 #search-button {
   margin-right: auto;
   background-color: #f8f8f8;
-  padding: 10px;
+  padding: 3px 30px 3px 30px;
   color: #000;
   font-size: 17px;
   border: 1px solid grey;
@@ -98,13 +78,25 @@ nav {
   cursor: pointer;
 }
 
-.rightMenu {
-  margin: 5px;
-  height: 30px;
-  width: 30px;
+#glass {
+  height: 20px;
+  width: auto;
 }
 
-/* video */
+nav {
+  display: flex;
+  justify-content: right;
+}
+
+#nav-bar {
+  float: right;
+}
+
+.nav-link {
+  color: #d5d7d8;
+  margin: 5px;
+}
+
 .video-section {
   float: left;
   flex-grow: 4;
@@ -114,22 +106,15 @@ nav {
   width: 100%;
 }
 
-#glass {
-  height: 10px;
-  width: auto;
+.vtitle {
+  text-align: left;
+  display: block;
+  justify-content: left;
 }
 
-.recommendations {
+.sub-container {
   display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  flex-grow: 1;
-  padding: 10px;
-}
-
-.thumnbailRecomendation {
-  display: flex;
-  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .submenu {
@@ -138,59 +123,31 @@ nav {
   font-size: 15px;
   color: grey;
   display: flex;
+  align-items: center;
 }
 
-.subMenuImage {
+.sub-menu-image {
   height: 20px;
   width: 20px;
   margin-right: 5px;
   margin-left: 5px;
 }
 
-.sub-container {
+.channel-name {
   display: flex;
   justify-content: space-between;
 }
 
-.vtitle {
-  text-align: left;
-  display: block;
-  justify-content: left;
-}
-
-a > u {
-  text-decoration: none;
-}
-
-.thumbnailImage {
-  width: 190px;
-  height: 110px;
-}
-
-.aboutVideo {
-  font-size: 14px;
-  padding-left: 10px;
-  text-align: left;
-}
-
-.views {
-  padding-left: 10px;
-  font-size: 10px;
-  text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.channelName {
-  display: flex;
-  justify-content: space-between;
-}
-
-.videoInformation {
+.video-information {
   display: inline;
   text-align: left;
 }
 
-.subscribeButton {
+.video-information > p {
+  margin-top: 20px;
+}
+
+.subscribe-button {
   background-color: #c00;
   border: #c00;
   border-radius: 2px;
@@ -198,10 +155,18 @@ a > u {
   font-family: 'Roboto', cursive;
   font-weight: 700;
   height: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
+}
+
+.comment-section {
+  text-align: left;
+  margin-left: 0px;
+}
+
+.right-menu {
+  margin: 5px;
+  height: 30px;
+  width: 30px;
 }
 
 .submit-comment {
@@ -220,7 +185,6 @@ a > u {
 .comment {
   display: flex;
   margin-top: 30px;
-  align-items: center;
 }
 
 .comment-form {
@@ -232,22 +196,50 @@ a > u {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.commentBody {
+.comment-body {
   flex-grow: 50;
-  margin-left: 20px;
   display: flex;
   flex-flow: column;
+  text-align: left;
 }
 
-.commentIcons {
+.comment-icons {
   height: 1em;
   width: 1em;
 }
 
-.commentSection {
+.recommendations {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  flex-grow: 1;
+  padding: 10px 20px 10px 20px;
+  margin-left: 20px;
+}
+
+.thumbnail-recommendation {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.views {
+  padding-left: 10px;
+  font-size: 10px;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.thumbnail-image {
+  width: 190px;
+  height: 110px;
+}
+
+.thumbnail-text {
   text-align: left;
 }
 
-.comments {
-  margin-top: 40px;
+.about-video {
+  font-size: 14px;
+  padding-left: 10px;
+  margin-top: 0px;
 }
