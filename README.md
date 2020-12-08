@@ -22,10 +22,14 @@ Additional description about the project and its features.
 👤 **Nikola Zdrale**
 
 - GitHub: [@zdrale](https://github.com/zdrale)
+- Twitter: [@zdralenikola](https://twitter.com/zdralenikola)
+- LinkedIn: [@nikola-zdrale](https://www.linkedin.com/in/nikola-zdrale/)
 
 👤 **Sinan Sevgi**
 
 - GitHub: [@sinansevgi](https://github.com/sinansevgi)
+- LinkedIn: [@sinansevgi](https://www.linkedin.com/in/sinan-s-52559437/)
+- Twitter: [@nativeofcybers1](https://twitter.com/nativeofcybers1)
 
 ## 🤝 Contributing
 
@@ -41,4 +45,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
