@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Youtube Player Page Clone
 
 > This is a youtube player page clone which made for Microverse Technical Curriculum Project 1
