@@ -27,7 +27,6 @@ Additional description about the project and its features.
 
 - GitHub: [@sinansevgi](https://github.com/sinansevgi)
 - LinkedIn: [@sinansevgi](https://www.linkedin.com/in/sinan-s-52559437/)
-- Twitter: [@nativeofcybers1](https://twitter.com/nativeofcybers1)
 
 ## 🤝 Contributing
 
